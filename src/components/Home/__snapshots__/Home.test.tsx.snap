@@ -71,9 +71,6 @@ exports[`Home should match snapshot 1`] = `
         </span>
       </div>
     </header>
-    <section
-      class="skiddle-c-search-results skiddle-u-pt-large"
-    />
   </div>
 </DocumentFragment>
 `;

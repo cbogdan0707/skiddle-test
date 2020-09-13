@@ -1,13 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Event details should match snapshot 1`] = `
-<DocumentFragment>
-  <div />
-</DocumentFragment>
-`;
-
 exports[`Event should match snapshot 1`] = `
 <DocumentFragment>
-  <div />
+  <div>
+    <div
+      class="skiddle-u-text-align-center skiddle-u-background-primary"
+    >
+      <img
+        alt="event logo"
+        class="skiddle-u-mt-large"
+      />
+      <h1
+        class="skiddle-u-color-white skiddle-u-pb-large"
+      />
+    </div>
+    <section>
+      <ul
+        class="skiddle-c-search-results-container"
+      />
+    </section>
+  </div>
 </DocumentFragment>
 `;
