@@ -16,8 +16,10 @@ export const Event = ({
 
   return (
     <div>
-      {hasError && <div data-testid="fetch-error">Error: {hasError}</div>}
-      {response.results && (
+      {hasError && (
+        <div data-testid="fetch-error">Error: failed to fetch events</div>
+      )}
+      {!hasError && response.results && (
         <>
           <div className="skiddle-u-text-align-center skiddle-u-background-primary">
             <img

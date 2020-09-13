@@ -4,5 +4,9 @@ module.exports = {
     '^.+\\.(ts)?$': 'babel-jest',
   },
   moduleFileExtensions: ['js', 'ts', 'tsx'],
-  testPathIgnorePatterns: ['<rootDir>/src/App.tsx'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/App.tsx',
+    '<rootDir>/src/index.tsx',
+    '<rootDir>/src/serviceWorker.tsx',
+  ],
 };

@@ -11,8 +11,10 @@ export const Artist = ({ match }: { match: { params: { id: string } } }) => {
 
   return (
     <div>
-      {hasError && <div data-testid="fetch-error">Error: {hasError}</div>}
-      {response.results && (
+      {hasError && (
+        <div data-testid="fetch-error">Error: failed to fetch artists</div>
+      )}
+      {!hasError && response.results && (
         <>
           <div className="skiddle-u-text-align-center skiddle-u-background-primary">
             <img
