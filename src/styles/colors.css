@@ -1,0 +1,6 @@
+:root {
+  --primary-color: rgb(70, 195, 190);
+  --secondary-color: rgb(247, 241, 241);
+  --white: rgb(255, 255, 255);
+  --default-unit: 8px;
+}

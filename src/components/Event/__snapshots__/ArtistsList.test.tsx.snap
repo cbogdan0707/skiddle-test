@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Artist List should match snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="skiddle-u-color-primary skiddle-u-mb-medium skiddle-c-artist-title"
+    >
+      List of artists:
+    </div>
+    <ul
+      class="skiddle-c-search-results-container"
+    >
+      <li>
+        <a
+          class="skiddle-u-primary-button skiddle-u-pa-small"
+          href="/artist/123540290"
+        >
+          Palms Trax
+        </a>
+      </li>
+      <li>
+        <a
+          class="skiddle-u-primary-button skiddle-u-pa-small"
+          href="/artist/123551074"
+        >
+          High Hoops DJs
+        </a>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;
+
+exports[`Event details should match snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="skiddle-u-color-primary skiddle-u-mb-medium skiddle-c-artist-title"
+    >
+      List of artists:
+    </div>
+    <ul
+      class="skiddle-c-search-results-container"
+    >
+      <li>
+        <a
+          class="skiddle-u-primary-button skiddle-u-pa-small"
+          href="/artist/123540290"
+        >
+          Palms Trax
+        </a>
+      </li>
+      <li>
+        <a
+          class="skiddle-u-primary-button skiddle-u-pa-small"
+          href="/artist/123551074"
+        >
+          High Hoops DJs
+        </a>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;

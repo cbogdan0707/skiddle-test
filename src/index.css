@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import './styles/resets.css';
+@import './styles/colors.css';
+@import './styles/utilities.css';
+
+::-webkit-input-placeholder {
+  color: rgb(179, 176, 176);
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.skiddle-c-logo {
+  display: block;
+  margin: 0 auto;
+  width: 18%;
+}
+
+.skiddle-c-search {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  position: relative;
+  text-align: center;
+  width: 28%;
+}
+
+.skiddle-c-search-input {
+  border: none;
+  border-radius: 6px;
+  padding: 0.6667em;
+  width: 100%;
+}
+
+.skiddle-c-search-inpup:active,
+.skiddle-c-search-input:focus {
+  border: none;
+  outline: none;
+}
+
+.skiddle-c-search-results {
+  background-color: var(--secondary-color);
+  padding: 0;
+}
+
+.skiddle-c-search-results-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10vh;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0 10vh;
+  padding-top: calc(var(--default-unit) * 3);
+}
+
+.skiddle-c-loading-spinner-container {
+  position: absolute;
+  right: 9px;
+  top: 5px;
+}
+
+.skiddle-c-location,
+.skiddle-c-date {
+  background-image: url('/assets/location.png');
+  padding-left: calc(var(--default-unit) * 3);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 0px 3px;
+}
+
+.skiddle-c-date {
+  background-image: url('/assets/date.png');
+}
+
+.skiddle-c-artist-title {
+  font-weight: bold;
+  margin-left: 10vh;
+}
+
+.skiddle-c-artist-image {
+  width: 40%;
+}
+
+.skiddle-c-artist-description {
+  margin: 0 auto;
+  padding-bottom: calc(var(--default-unit) * 4);
+  width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+  .skiddle-c-search-results-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5vh;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 5vh;
+    padding-top: calc(var(--default-unit) * 3);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skiddle-c-search-results-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1vh;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 0 1vh;
+    padding-top: calc(var(--default-unit) * 3);
+  }
 }

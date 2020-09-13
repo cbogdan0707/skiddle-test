@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event details should match snapshot when results are available 1`] = `
+<DocumentFragment>
+  <section
+    class="skiddle-c-search-results skiddle-u-pt-large"
+  >
+    <ul
+      class="skiddle-c-search-results-container"
+    >
+      <li>
+        <div
+          class="skiddle-c-event-details"
+        >
+          <img
+            alt="event"
+            src="image1"
+          />
+          <div
+            class="skiddle-u-text-align-center skiddle-u-bold skiddle-u-mt-small"
+          >
+            event1
+          </div>
+          <div
+            class="skiddle-u-mt-small"
+          >
+            description1
+          </div>
+          <div
+            class="skiddle-u-mt-small skiddle-c-location"
+          >
+            location1
+          </div>
+          <div
+            class="skiddle-u-mt-small skiddle-c-date"
+          >
+            date1
+          </div>
+          <div
+            class="skiddle-u-text-align-center skiddle-u-mt-medium"
+          >
+            <a
+              class="skiddle-u-primary-button skiddle-u-pa-small"
+              href="/event/23232"
+            >
+              view details
+            </a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div
+          class="skiddle-c-event-details"
+        >
+          <img
+            alt="event"
+            src="image2"
+          />
+          <div
+            class="skiddle-u-text-align-center skiddle-u-bold skiddle-u-mt-small"
+          >
+            event2
+          </div>
+          <div
+            class="skiddle-u-mt-small"
+          >
+            description2
+          </div>
+          <div
+            class="skiddle-u-mt-small skiddle-c-location"
+          >
+            location2
+          </div>
+          <div
+            class="skiddle-u-mt-small skiddle-c-date"
+          >
+            date2
+          </div>
+          <div
+            class="skiddle-u-text-align-center skiddle-u-mt-medium"
+          >
+            <a
+              class="skiddle-u-primary-button skiddle-u-pa-small"
+              href="/event/323243"
+            >
+              view details
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+</DocumentFragment>
+`;

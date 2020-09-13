@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event details should match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="skiddle-c-event-details"
+  >
+    <img
+      alt="event"
+      src="test/imageUrl"
+    />
+    <div
+      class="skiddle-u-text-align-center skiddle-u-bold skiddle-u-mt-small"
+    >
+      test name
+    </div>
+    <div
+      class="skiddle-u-mt-small"
+    >
+      test description
+    </div>
+    <div
+      class="skiddle-u-mt-small skiddle-c-location"
+    >
+      test location
+    </div>
+    <div
+      class="skiddle-u-mt-small skiddle-c-date"
+    >
+      test date
+    </div>
+    <div
+      class="skiddle-u-text-align-center skiddle-u-mt-medium"
+    >
+      <a
+        class="skiddle-u-primary-button skiddle-u-pa-small"
+        href="/event/232345"
+      >
+        view details
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
