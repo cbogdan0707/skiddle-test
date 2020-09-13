@@ -2,6 +2,7 @@
 
 exports[`Event details should match snapshot when results are available 1`] = `
 <DocumentFragment>
+  0
   <section
     class="skiddle-c-search-results skiddle-u-pt-large"
   >

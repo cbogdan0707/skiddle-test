@@ -5,7 +5,7 @@ import { SearchField } from './SearchField';
 const searchField = {
   inputText: 'man',
   setInputText: jest.fn(),
-  searchResults: { loading: true },
+  searchResults: { loading: true, results: [] },
 };
 
 describe('searchFiels', () => {

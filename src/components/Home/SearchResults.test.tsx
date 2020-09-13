@@ -4,31 +4,35 @@ import { SearchResults } from './SearchResults';
 import { BrowserRouter } from 'react-router-dom';
 
 const result = {
-  results: [
-    {
-      id: 23232,
-      largeimageurl: 'image1',
-      eventname: 'event1',
-      description: 'description1',
-      venue: { address: 'location1' },
-      date: 'date1',
-    },
-    {
-      id: 323243,
-      largeimageurl: 'image2',
-      eventname: 'event2',
-      description: 'description2',
-      venue: { address: 'location2' },
-      date: 'date2',
-    },
-  ],
+  error: 0,
+  errormessage: '',
+  result: {
+    results: [
+      {
+        id: 23232,
+        largeimageurl: 'image1',
+        eventname: 'event1',
+        description: 'description1',
+        venue: { address: 'location1' },
+        date: 'date1',
+      },
+      {
+        id: 323243,
+        largeimageurl: 'image2',
+        eventname: 'event2',
+        description: 'description2',
+        venue: { address: 'location2' },
+        date: 'date2',
+      },
+    ],
+  },
 };
 
 describe('Event details', () => {
   it('should match snapshot when results are available', () => {
     const { asFragment } = render(
       <BrowserRouter>
-        <SearchResults searchResults={{ result }} />
+        <SearchResults searchResults={result} />
       </BrowserRouter>
     );
     expect(asFragment()).toMatchSnapshot();
@@ -38,8 +42,8 @@ describe('Event details', () => {
       <BrowserRouter>
         <SearchResults
           searchResults={{
-            error: true,
-            results: null,
+            error: 1,
+            result: { results: [] },
             errormessage: 'failed to fetch',
           }}
         />

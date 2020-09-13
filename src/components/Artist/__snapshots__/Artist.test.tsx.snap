@@ -2,6 +2,21 @@
 
 exports[`Artist details should match snapshot 1`] = `
 <DocumentFragment>
-  <div />
+  <div>
+    <div
+      class="skiddle-u-text-align-center skiddle-u-background-primary"
+    >
+      <img
+        alt="artist logo"
+        class="skiddle-c-artist-image skiddle-u-mt-large"
+      />
+      <h1
+        class="skiddle-u-color-white skiddle-u-mv-large"
+      />
+      <p
+        class="skiddle-c-artist-description"
+      />
+    </div>
+  </div>
 </DocumentFragment>
 `;
