@@ -40,7 +40,8 @@
   padding: 0;
 }
 
-.skiddle-c-search-results-container {
+.skiddle-c-search-results-container,
+.skiddle-c-artist-results-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10vh;

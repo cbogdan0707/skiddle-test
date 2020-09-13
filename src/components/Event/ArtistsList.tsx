@@ -14,7 +14,7 @@ export const ArtistsList = ({
           List of artists:
         </div>
       )}
-      <ul className="skiddle-c-search-results-container">
+      <ul className="skiddle-c-artist-results-container">
         {response.results.artists &&
           response.results.artists.map((artist: ArtistsData) => (
             <li key={artist.artistid}>
